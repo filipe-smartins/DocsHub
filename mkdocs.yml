@@ -1,0 +1,72 @@
+site_name: DocsHub
+theme:
+  name: material
+  features:
+    - content.code.copy
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.highlight
+
+
+nav:
+  - Início: index.md
+  - Ferramentas:
+    - Git: tools/git.md
+    - SSH: tools/ssh.md
+    - Docker:
+      - Overview: softwares/docker.md
+      - Compose: tools/docker_compose.md
+      - Avançado: tools/docker_advanced.md
+    - Testes:
+      - pytest: languages/python/pytest.md
+      - Integração: tools/integration_tests.md
+      - TDD: languages/python/tdd.md
+    - Linters & Tipagem:
+      - flake8: languages/python/flake8.md
+      - black: languages/python/black.md
+      - mypy: languages/python/mypy.md
+    - Mensageria:
+      - RabbitMQ: tools/rabbitmq.md
+      - Kafka: tools/kafka.md
+      - Padrões de consumo: tools/consumption_patterns.md
+      - Idempotência: tools/idempotency.md
+  - OS:
+    - Linux:
+      - Linux: OS/linux/linux.md
+      - Memory: OS/linux/memory.md
+      - CPU: OS/linux/cpu.md
+      - Rede: OS/linux/network.md
+      - Firewall: OS/linux/firewall.md
+      - Usuários: OS/linux/usuarios.md
+      - systemd: OS/linux/systemd.md
+      - Permissões: OS/linux/permissoes.md
+      - Variáveis de ambiente: OS/linux/variaveis_ambiente.md
+  - Softwares:
+    - Nginx: softwares/nginx.md
+    - Postgres: softwares/postgresql.md
+  - Segurança:
+    - Certbot: security/certbot.md
+    - Autenticação (OAuth2 / JWT): security/auth_oauth_jwt.md
+    - Vault (segredos): security/vault_gerenciamento_segredos.md
+    - Escaneamento de dependências: security/escaneamento_dependencias.md
+    - Hardening: security/hardening_servidores.md
+  - Bancos de Dados:
+    - SQL: languages/sql/sql.md
+    - SELECT: languages/sql/select.md
+    - INSERT: languages/sql/insert.md
+    - UPDATE: languages/sql/update.md
+    - DCL: languages/sql/DCL.md
+    - Avançado:
+      - Backup & Restore: databases/backup_restore.md
+      - Replicação: databases/replicacao.md
+      - Tuning: databases/tuning.md
+      - Redis: databases/redis.md
+      - Modelagem de dados: databases/modelagem_de_dados.md
+      - Alembic (migrações): databases/alembic.md
+      - Backups Avançados: databases/backups_avancados.md
+      - Tuning de Índices: databases/tuning_indices.md
+  - Infra:
+    - HAProxy / Nginx Avançado: infra/haproxy_nginx_avancado.md
+    - TLS Mútuo (mTLS): infra/tls_mutuo.md
+    - Redes Virtuais & Peering: infra/redes_virtuais_peering.md
+ 
