@@ -10,26 +10,26 @@ markdown_extensions:
 
 nav:
   - Início: index.md
-  - Ferramentas:
+  - Tools:
     - Git: tools/git.md
     - SSH: tools/ssh.md
-    - Docker:
-      - Overview: softwares/docker.md
-      - Compose: tools/docker_compose.md
-      - Avançado: tools/docker_advanced.md
-    - Testes:
-      - pytest: languages/python/pytest.md
-      - Integração: tools/integration_tests.md
-      - TDD: languages/python/tdd.md
-    - Linters & Tipagem:
-      - flake8: languages/python/flake8.md
-      - black: languages/python/black.md
-      - mypy: languages/python/mypy.md
+    - Integração: tools/integration_tests.md
     - Mensageria:
       - RabbitMQ: tools/rabbitmq.md
       - Kafka: tools/kafka.md
       - Padrões de consumo: tools/consumption_patterns.md
       - Idempotência: tools/idempotency.md
+    - Mensageria:
+      - RabbitMQ: tools/rabbitmq.md
+      - Kafka: tools/kafka.md
+      - Padrões de consumo: tools/consumption_patterns.md
+      - Idempotência: tools/idempotency.md
+
+  - Softwares:
+    - Docker: softwares/docker.md
+    - Nginx: softwares/nginx.md
+    - Postgres: softwares/postgresql.md
+
   - OS:
     - Linux:
       - Linux: OS/linux/linux.md
@@ -41,21 +41,37 @@ nav:
       - systemd: OS/linux/systemd.md
       - Permissões: OS/linux/permissoes.md
       - Variáveis de ambiente: OS/linux/variaveis_ambiente.md
-  - Softwares:
-    - Nginx: softwares/nginx.md
-    - Postgres: softwares/postgresql.md
+
+
+  - Linguagens:
+    - Python:
+      - Black: languages/python/black.md
+      - Django: languages/python/django.md
+      - Flake8: languages/python/flake8.md
+      - Gunicorn: languages/python/gunicorn.md
+      - HTTP: languages/python/http.md
+      - Logs: languages/python/logs.md
+      - Mypy: languages/python/mypy.md
+      - Pandas: languages/python/pandas.md
+      - Pytest: languages/python/pytest.md
+      - TDD: languages/python/tdd.md
+
+    - SQL:
+      - SQL: languages/sql/sql.md
+      - SELECT: languages/sql/select.md
+      - INSERT: languages/sql/insert.md
+      - UPDATE: languages/sql/update.md
+      - DCL: languages/sql/DCL.md
+
+
   - Segurança:
     - Certbot: security/certbot.md
     - Autenticação (OAuth2 / JWT): security/auth_oauth_jwt.md
     - Vault (segredos): security/vault_gerenciamento_segredos.md
     - Escaneamento de dependências: security/escaneamento_dependencias.md
     - Hardening: security/hardening_servidores.md
+
   - Bancos de Dados:
-    - SQL: languages/sql/sql.md
-    - SELECT: languages/sql/select.md
-    - INSERT: languages/sql/insert.md
-    - UPDATE: languages/sql/update.md
-    - DCL: languages/sql/DCL.md
     - Avançado:
       - Backup & Restore: databases/backup_restore.md
       - Replicação: databases/replicacao.md
@@ -65,6 +81,7 @@ nav:
       - Alembic (migrações): databases/alembic.md
       - Backups Avançados: databases/backups_avancados.md
       - Tuning de Índices: databases/tuning_indices.md
+
   - Infra:
     - HAProxy / Nginx Avançado: infra/haproxy_nginx_avancado.md
     - TLS Mútuo (mTLS): infra/tls_mutuo.md
